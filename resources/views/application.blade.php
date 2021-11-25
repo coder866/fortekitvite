@@ -25,9 +25,9 @@
     rel="stylesheet">
     {{-- <script type="module" src="http://localhost:3000/@vite/client"></script> --}}
     @devserver
-    <script type="module" src="http://localhost:3000/resources/js/app.js" ></script>
-    <script type="module" src="http://localhost:3000/resources/scss/app.scss" ></script>
     <script type="module" src="http://localhost:3000/resources/scss/loader.css" ></script>
+    <script type="module" src="http://localhost:3000/resources/scss/app.scss" ></script>
+    <script type="module" src="http://localhost:3000/resources/js/app.js" ></script>
     @else
       <link rel="stylesheet" href="{{vitex('app.css')}}"> 
       
