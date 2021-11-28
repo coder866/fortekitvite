@@ -11,18 +11,18 @@ export default ({ command }) => ({
             input: [
                 "resources/js/app.js",
                 "resources/scss/app.scss",
-                "resources/scss/loader.css"
+                "resources/scss/loader.css",
             ],
         },
     },
-    // server: {
-    //     strictPort: true,
-    //     port: 3000
-    // },
+    server: {
+        strictPort: true,
+        port: 3000,
+    },
     css: {
         preprocessorOptions: {
-          scss: { 
-             additionalData: `@import "./resources/js/src/@core/scss/base/bootstrap-extended/include";` 
+            scss: {
+                additionalData: `@import "./resources/js/src/@core/scss/base/bootstrap-extended/include";`,
             },
         },
     },
@@ -44,5 +44,4 @@ export default ({ command }) => ({
         },
     },
     plugins: [createVuePlugin()],
-
 });

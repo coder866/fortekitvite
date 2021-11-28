@@ -6,7 +6,7 @@
       <b-link class="brand-logo">
         <vuexy-logo />
         <h2 class="brand-text text-primary ml-1">
-          Vuexy
+          {{app_name}}
         </h2>
       </b-link>
       <!-- /Brand logo-->
@@ -41,7 +41,7 @@
             title-tag="h2"
             class="font-weight-bold mb-1"
           >
-            Welcome to Vuexy! 👋
+            Welcome to Fortekit ! 👋
           </b-card-title>
           <b-card-text class="mb-2">
             Please sign-in to your account and start the adventure
@@ -194,6 +194,7 @@ import { required, email } from '@validations'
 import { togglePasswordVisibility } from '@core/mixins/ui/forms'
 import store from '@/store/index'
 import ToastificationContent from '@core/components/toastification/ToastificationContent.vue'
+import LOGINIMAGE from '@/assets/images/pages/login-v2.svg';
 
 export default {
   components: {
@@ -217,10 +218,11 @@ export default {
   mixins: [togglePasswordVisibility],
   data() {
     return {
+      app_name:import.meta.env.VITE_APP_NAME,
       status: '',
       password: '',
       userEmail: '',
-      sideImg: require('@/assets/images/pages/login-v2.svg'),
+      sideImg: LOGINIMAGE,
       // validation rulesimport store from '@/store/index'
       required,
       email,
@@ -232,8 +234,9 @@ export default {
     },
     imgUrl() {
       if (store.state.appConfig.layout.skin === 'dark') {
+        import LOGINDARK from '@/assets/images/pages/login-v2-dark.svg';
         // eslint-disable-next-line vue/no-side-effects-in-computed-properties
-        this.sideImg = require('@/assets/images/pages/login-v2-dark.svg')
+        this.sideImg =LOGINDARK ;
         return this.sideImg
       }
       return this.sideImg
