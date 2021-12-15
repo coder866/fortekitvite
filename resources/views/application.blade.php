@@ -11,11 +11,11 @@
   <title>Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template</title>
 
   <!-- Splash Screen/Loader Styles -->
-  
+
 
   <!-- Styles -->
 
- 
+
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="{{ asset('images/logo/favicon.png') }}">
@@ -23,16 +23,18 @@
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
     rel="stylesheet">
-    {{-- <script type="module" src="http://localhost:3000/@vite/client"></script> --}}
+{{--     <script type="module" src="http://localhost:3000/@vite/client"></script>--}}
     @devserver
-    <script type="module" src="http://localhost:3000/resources/js/app.js" ></script>
-    <script type="module" src="http://localhost:3000/resources/scss/app.scss" ></script>
     <script type="module" src="http://localhost:3000/resources/scss/loader.css" ></script>
+
+    <script type="module" src="http://localhost:3000/resources/scss/app.scss" ></script>
+        <script type="module" src="http://localhost:3000/resources/js/app.js" ></script>
+
     @else
-      <link rel="stylesheet" href="{{vitex('app.css')}}"> 
-      
+       <link rel="stylesheet" href="{{vitex('loader.css')}}">
+        <link rel="stylesheet" href="{{vitex('app.css')}}">
        <script type="module" src="{{vitex('app.js')}}" defer></script>
-       
+
     @enddevserver
 </head>
 
@@ -52,12 +54,12 @@
     </div>
   </div>
   <div id="app">
-    
+
   </div>
 
-  
 
-  
+
+
 
 </body>
 
