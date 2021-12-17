@@ -1,15 +1,11 @@
 <template>
     <div>
-        <h1>Dashboard Here We Gooo</h1>
+        <h1>Dashboard Here We Goo</h1>
     </div>
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

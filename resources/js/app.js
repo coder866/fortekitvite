@@ -1,5 +1,4 @@
-// import "../scss/app.scss";
-// import "../scss/loader.css";
+import "../scss/app.scss";
+import "../scss/loader.css";
 
-
-import './src/main.js'
+import "./src/main.js";
