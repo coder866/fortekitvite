@@ -13,6 +13,9 @@ import './global-components'
 import '@/libs/portal-vue'
 import '@/libs/toastification'
 
+//acl
+import '@/libs/acl'
+
 // BSV Plugin Registration
 Vue.use(ToastPlugin)
 Vue.use(ModalPlugin)

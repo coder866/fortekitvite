@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ApplicationController;
+use Illuminate\Support\Facades\Hash;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,5 +14,7 @@ use App\Http\Controllers\ApplicationController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('passgen', function () {
+return Hash::make('vision2031');
+});
 Route::get('/{any}', [ApplicationController::class, 'index'])->where('any', '.*');
